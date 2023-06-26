@@ -22,7 +22,7 @@ class NN(nn.Module):
                                  nn.Flatten(),
                                  nn.LazyLinear(256), nn.ReLU(), nn.Dropout(p=0.5),
                                  nn.Linear(256, 128), nn.ReLU(), nn.Dropout(p=0.5),
-                                 nn.Linear(128, 2), nn.Sigmoid())
+                                 nn.Linear(128, 2), nn.LogSoftmax(dim=1))
         self.net.apply(init_cnn)
     
     def forward(self, X):
@@ -38,7 +38,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 #Hyperparameters
 num_epochs = 10
-lr = 0.0001
+lr = 0.00009
 batch_size = 32
 side_length = 256
 train_set_size = 10000
@@ -130,7 +130,7 @@ trainer(num_epochs=num_epochs)
 check_accuracy(model=model, loader=train_loader)
 check_accuracy(model=model, loader=test_loader)
 
-torch.save(model.state_dict(), './dogcatmodel4_nn')
+torch.save(model.state_dict(), './dogcatmodel6_nn')
 
 #Show an image
 #plt.figure()

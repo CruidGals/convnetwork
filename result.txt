@@ -13,3 +13,6 @@ dogcatmodel3_nn: Test Accuracy = 76%
 
 dogcatmodel4_nn: Test Accuracy = 75%
     - Changed: learning rate = 0.0001
+
+dogcatmodel5_nn: Test Accuracy = 76%
+    - Changed: reverted back to Hyperparameters used in dogcatmodel2_nn
