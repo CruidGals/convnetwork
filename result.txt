@@ -1,0 +1,15 @@
+
+    - Started off with: 
+        - num_epochs = 10
+        - learning rate = 0.0001
+        - activation function for output layer is LogSoftmax(dim=1)
+dogcatmodel_nn: Test Accuracy = 73% (Original Model)
+
+dogcatmodel2_nn: Test Accuracy = 77%
+    - Changed: learning rate = 0.00009
+
+dogcatmodel3_nn: Test Accuracy = 76%
+    - Changed: activation function for output layer is Sigmoid()
+
+dogcatmodel4_nn: Test Accuracy = 
+    - Changed: learning rate = 0.0001

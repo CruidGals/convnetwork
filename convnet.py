@@ -38,7 +38,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 #Hyperparameters
 num_epochs = 10
-lr = 0.00009
+lr = 0.0001
 batch_size = 32
 side_length = 256
 train_set_size = 10000
@@ -130,7 +130,7 @@ trainer(num_epochs=num_epochs)
 check_accuracy(model=model, loader=train_loader)
 check_accuracy(model=model, loader=test_loader)
 
-torch.save(model.state_dict(), './dogcatmodel3_nn')
+torch.save(model.state_dict(), './dogcatmodel4_nn')
 
 #Show an image
 #plt.figure()
