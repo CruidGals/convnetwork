@@ -11,5 +11,5 @@ dogcatmodel2_nn: Test Accuracy = 77%
 dogcatmodel3_nn: Test Accuracy = 76%
     - Changed: activation function for output layer is Sigmoid()
 
-dogcatmodel4_nn: Test Accuracy = 
+dogcatmodel4_nn: Test Accuracy = 75%
     - Changed: learning rate = 0.0001
